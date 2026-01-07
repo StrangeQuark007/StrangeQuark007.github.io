@@ -41,3 +41,25 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ===============================
+   Global typography override
+   =============================== */
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+.masthead,
+.nav__title,
+.page__footer,
+.page__content,
+.archive__item,
+.archive__item-title {
+  font-family: "Times New Roman", Times, serif;
+}
