@@ -63,3 +63,12 @@ h1, h2, h3, h4, h5, h6 {
 .archive__item-title {
   font-family: "Times New Roman", Times, serif;
 }
+
+/* Force Times everywhere */
+html, body,
+*,
+*::before,
+*::after {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
