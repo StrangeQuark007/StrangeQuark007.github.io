@@ -42,7 +42,12 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Body text only (do not touch headings or icons) */
+/* ==========================================
+   Times font for MAIN TEXT ONLY
+   (About, Publications, Talks, etc.)
+   ========================================== */
+
+/* Generic page body text */
 .page__content p,
 .page__content li,
 .page__content blockquote,
@@ -50,6 +55,23 @@
 .page__content dt {
   font-family: "Times New Roman", Times, serif;
 }
+
+/* Publications */
+.page__content .publication-list p,
+.page__content .publication-list li,
+.page__content .archive__item p,
+.page__content .archive__item li {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Talks */
+.page__content .talks p,
+.page__content .talks li,
+.page__content .archive__item-talk p,
+.page__content .archive__item-talk li {
+  font-family: "Times New Roman", Times, serif;
+}
+
 
 
 
