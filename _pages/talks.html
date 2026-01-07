@@ -3,58 +3,48 @@ layout: archive
 title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
----
+
 conference:
   - date: "September 2022"
     title: "Elliptic Integrals in Fundamental Physics"
     location: "Mainz, Germany"
     url: "https://indico.mitp.uni-mainz.de/event/212/contributions/4071/attachments/2992/3559/Giroux.pdf"
-
   - date: "May 2023"
     title: "RADCOR 2023"
     location: "Crieff, Scotland"
     url: "https://indico.ph.ed.ac.uk/event/118/contributions/2342/"
-
   - date: "December 2023"
     title: "QCD meets Gravity"
     location: "Geneva, Switzerland"
     url: "https://indico.cern.ch/event/1317494/contributions/5697381/attachments/2769627/4825340/MG_CERN.pdf"
-
   - date: "March 2024"
     title: "S-matrix Marathon"
     location: "Princeton, USA"
     url: "https://www.ias.edu/sns/s-matrix-marathon-daily-workshop-schedule-tuesday-march-19-2024"
-
   - date: "June 2024"
     title: "Amplitudes 2024"
     location: "Princeton, USA"
     url: "https://www.ias.edu/sites/default/files/05%20amplitudes_giroux.pdf"
-
   - date: "June 2024"
     title: "S-matrix Bootstrap Workshop"
     location: "Reykjavik, Iceland"
     url: "https://bootstrapcollaboration.com/smatrix2024/"
-
   - date: "November 2024"
     title: "Loop the Loop: Feynman calculus applied to gravity and particle physics (hosted by MITP)"
     location: "Mainz, Germany"
     url: "https://indico.mitp.uni-mainz.de/event/423/overview"
-
   - date: "May 2025"
     title: "LoopFest XXIII"
     location: "University of Alberta, Canada"
     url: "https://indico.cern.ch/event/1446102/"
-
   - date: "June 2025"
     title: "SURGE meeting"
     location: "UCLA, USA"
     url: "https://indico.global/event/13890/contributions/128997/attachments/60337/116191/SURGE_ucla.pdf/"
-
   - date: "August 2025"
     title: "Local mini-workshop on Algebraic Geometry, Combinatorics and Feynman Integrals"
     location: "McGill University, Canada"
     url: "https://www.math.mcgill.ca/bpym/events/2025AGCFI.html"
-
   - date: "October 2025"
     title: "Michigan Math-Physics Amplitudes Workshop"
     location: "University of Michigan, USA"
@@ -64,116 +54,105 @@ seminar:
   - date: "February 2022"
     title: "High energy theory Journal Club"
     location: "McGill University"
-    url: ""
-
   - date: "August 2022"
     title: "Amplitudes seminar"
     location: "Bonn University"
-    url: ""
-
   - date: "September 2022"
     title: "Amplitudes seminar"
     location: "Niels Bohr Institute"
-    url: ""
-
   - date: "October 2022"
     title: "High energy theory Journal Club"
     location: "McGill University"
-    url: ""
-
   - date: "November 2022"
     title: "Geometry and scattering amplitudes"
     location: "Padua University (online)"
-    url: ""
-
   - date: "September 2023"
     title: "Geometry and scattering amplitudes"
     location: "Padua University (online)"
-    url: ""
-
   - date: "October 2023"
     title: "Amplitudes seminar"
     location: "IAS Princeton"
-    url: ""
-
   - date: "November 2023"
     title: "Amplitudes seminar"
     location: "Durham University (online)"
-    url: ""
-
   - date: "November 2023"
     title: "Amplitudes seminar"
     location: "Technion (online)"
-    url: ""
-
   - date: "November 2023"
     title: "Amplitudes seminar"
     location: "Padua University (online)"
-    url: ""
-
   - date: "December 2023"
     title: "High energy theory Journal Club"
     location: "McGill University"
-    url: ""
-
   - date: "November 2024"
     title: "Amplitudes seminar"
     location: "IAS Princeton"
-    url: ""
-
   - date: "January 2025"
     title: "High energy theory Journal Club"
     location: "McGill University"
-    url: ""
-
   - date: "January 2025"
     title: "UNIVERSE+ Seminar"
     location: "MPI (online)"
     url: "https://positive-geometry.com/"
-
   - date: "September 2025"
     title: "Theory Seminar"
     location: "Columbia University"
-    url: ""
-
   - date: "November 2025"
     title: "CTP Nuclear and Particle Theory Seminar"
     location: "MIT"
-    url: ""
-
   - date: "November 2025"
     title: "Theory Seminar"
     location: "Bonn University (online)"
-    url: ""
-
   - date: "January 2026"
     title: "Theory Seminar"
     location: "SLAC"
-    url: ""
 
 public:
   - date: "October 2022"
     title: "Mont-Tremblant Astronomy Club — What is the Standard Model?"
-    location: ""
     url: "https://domainesaintbernard.org/en/astronomy/"
-
   - date: "March 2023"
     title: "Mont-Tremblant Astronomy Club — What is the Large Hadron Collider?"
-    location: ""
     url: "https://domainesaintbernard.org/en/astronomy/"
-
   - date: "February 2025"
     title: "Mont-Tremblant Astronomy Club — From the smallest to biggest structures"
-    location: ""
     url: "https://domainesaintbernard.org/en/astronomy/"
+---
 
+{% assign C = page.conference %}
+{% assign S = page.seminar %}
+{% assign P = page.public %}
 
-<!-- {% if site.talkmap_link == true %}
+## Conference talks
+<ul>
+{% for t in C %}
+  <li>
+    <strong>{{ t.date }}</strong> —
+    {% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}
+    {% if t.location %}, {{ t.location }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+## Seminars
+<ul>
+{% for t in S %}
+  <li>
+    <strong>{{ t.date }}</strong> —
+    {% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}
+    {% if t.location %}, {{ t.location }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
 
-{% endif %}
+## Public talks
+<ul>
+{% for t in P %}
+  <li>
+    <strong>{{ t.date }}</strong> —
+    {% if t.url %}<a href="{{ t.url }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}
+    {% if t.location %}, {{ t.location }}{% endif %}
+  </li>
+{% endfor %}
+</ul>
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %} -->
