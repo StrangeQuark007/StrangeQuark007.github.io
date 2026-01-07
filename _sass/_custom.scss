@@ -18,6 +18,9 @@ figcaption {
 
 body { outline: 10px solid transparent !important; }
 
+/* Make avatar rectangular (theme often targets the img itself) */
+img.author__avatar,
 .author__avatar img {
   border-radius: 0 !important;
 }
+
