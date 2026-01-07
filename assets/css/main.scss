@@ -42,17 +42,44 @@
     "vendor/font-awesome/brands"
 ;
 
-/* Publications + Talks + About body text (works even if not wrapped in .page__content) */
-.page__content p,
-.page__content li,
-.page__content span,
-.page__content div,
+/* =====================================================
+   Times font for TEXT in archive pages (Publications, Talks)
+   without touching headers or icons
+   ===================================================== */
+
+/* Archive pages: body text */
+.archive p,
+.archive li,
+.archive span,
+.archive div,
 .wordwrap,
 .wordwrap p,
 .wordwrap span,
 .wordwrap a {
   font-family: "Times New Roman", Times, serif;
 }
+
+/* Do NOT touch headings */
+.archive h1,
+.archive h2,
+.archive h3,
+.archive h4,
+.archive h5,
+.archive h6 {
+  font-family: inherit;
+}
+
+/* Do NOT touch icons */
+.archive i,
+.archive i::before,
+.archive i::after,
+.archive [class^="fa"],
+.archive [class*=" fa"],
+.archive [class^="ai-"],
+.archive [class*=" ai-"] {
+  font-family: inherit;
+}
+
 
 
 
