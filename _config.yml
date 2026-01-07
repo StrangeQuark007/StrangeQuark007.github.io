@@ -12,7 +12,7 @@ site_theme               : "air" # The available themes options are "default", "
 title                    : "Mathieu Giroux"
 title_separator          : "-"
 name                     : &name "Mathieu Giroux"
-description              : &description "Mathieu Giroux's Website"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Mathieu Giroux's Homepage"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://strangequark007.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -27,9 +27,7 @@ author:
   name             : "Mathieu Giroux"
   pronouns         : # example: "she/her"  
   bio              : 
-  location:
-  - "Pupin Hall, Columbia University, New York, NY"
-  - "1 Einstein Drive, Institute for Advanced Study, Princeton, NJ"
+  location: "Columbia University, New York, NY<br>Institute for Advanced Study, Princeton, NJ"
   employer         : "Columbia U. & IAS Princeton"
   uri              : # URL
   email            : "giroux@ias.edu" 
