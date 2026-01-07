@@ -26,9 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Mathieu Giroux"
   pronouns         : # example: "she/her"  
-  bio              : "I am a physicist jointly affiliated with Columbia University and the Institute for Advanced Study in Princeton."
-  location         : 
-  employer         : 
+  bio              : 
+  location:
+  - "Pupin Hall, Columbia University, New York, NY"
+  - "1 Einstein Drive, Institute for Advanced Study, Princeton, NJ"
+  employer         : "Columbia U. & IAS Princeton"
   uri              : # URL
   email            : "giroux@ias.edu" 
 
