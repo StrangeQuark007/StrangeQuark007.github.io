@@ -42,44 +42,6 @@
     "vendor/font-awesome/brands"
 ;
 
-/* =====================================================
-   Force Times inside archive content (Publications, Talks)
-   but preserve headings and icon fonts
-   ===================================================== */
-
-/* 1) Force Times for all normal text inside archive pages */
-.archive .page__content,
-.archive .page__content * {
-  font-family: "Times New Roman", Times, serif !important;
-}
-
-/* 2) Keep headings not Times (optional: comment out if you WANT Times headings too) */
-.archive .page__content h1,
-.archive .page__content h2,
-.archive .page__content h3,
-.archive .page__content h4,
-.archive .page__content h5,
-.archive .page__content h6 {
-  font-family: inherit !important;
-}
-
-/* 3) Restore icon fonts (Font Awesome / Academicons) */
-.archive .page__content i,
-.archive .page__content i::before,
-.archive .page__content i::after,
-.archive .page__content .fa,
-.archive .page__content .fas,
-.archive .page__content .far,
-.archive .page__content .fal,
-.archive .page__content .fab,
-.archive .page__content [class^="fa-"],
-.archive .page__content [class*=" fa-"],
-.archive .page__content .ai,
-.archive .page__content [class^="ai-"],
-.archive .page__content [class*=" ai-"] {
-  font-family: initial !important;
-}
-
 
 
 
