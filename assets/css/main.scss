@@ -43,42 +43,43 @@
 ;
 
 /* =====================================================
-   Times font for TEXT in archive pages (Publications, Talks)
-   without touching headers or icons
+   Force Times inside archive content (Publications, Talks)
+   but preserve headings and icon fonts
    ===================================================== */
 
-/* Archive pages: body text */
-.archive p,
-.archive li,
-.archive span,
-.archive div,
-.wordwrap,
-.wordwrap p,
-.wordwrap span,
-.wordwrap a {
-  font-family: "Times New Roman", Times, serif;
+/* 1) Force Times for all normal text inside archive pages */
+.archive .page__content,
+.archive .page__content * {
+  font-family: "Times New Roman", Times, serif !important;
 }
 
-/* Do NOT touch headings */
-.archive h1,
-.archive h2,
-.archive h3,
-.archive h4,
-.archive h5,
-.archive h6 {
-  font-family: inherit;
+/* 2) Keep headings not Times (optional: comment out if you WANT Times headings too) */
+.archive .page__content h1,
+.archive .page__content h2,
+.archive .page__content h3,
+.archive .page__content h4,
+.archive .page__content h5,
+.archive .page__content h6 {
+  font-family: inherit !important;
 }
 
-/* Do NOT touch icons */
-.archive i,
-.archive i::before,
-.archive i::after,
-.archive [class^="fa"],
-.archive [class*=" fa"],
-.archive [class^="ai-"],
-.archive [class*=" ai-"] {
-  font-family: inherit;
+/* 3) Restore icon fonts (Font Awesome / Academicons) */
+.archive .page__content i,
+.archive .page__content i::before,
+.archive .page__content i::after,
+.archive .page__content .fa,
+.archive .page__content .fas,
+.archive .page__content .far,
+.archive .page__content .fal,
+.archive .page__content .fab,
+.archive .page__content [class^="fa-"],
+.archive .page__content [class*=" fa-"],
+.archive .page__content .ai,
+.archive .page__content [class^="ai-"],
+.archive .page__content [class*=" ai-"] {
+  font-family: initial !important;
 }
+
 
 
 
