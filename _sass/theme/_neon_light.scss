@@ -1,0 +1,69 @@
+/* ==========================================================================
+   NEON THEME - LIGHT VERSION
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #00a6b3;   // toned-down neon cyan
+$dark-primary-color         : mix(#000, $primary-color, 30%);
+$darker-primary-color       : mix(#000, $primary-color, 50%);
+$light-primary-color        : mix(#fff, $primary-color, 60%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);
+
+$background                 : #f7f9ff;   // very light blue-white
+$background-light           : #eef2ff;
+$background-lighter         : #e3e9ff;
+
+$text                      : #1a1d2b;
+$text-muted                : #4a5070;
+
+$link                      : #007c86;
+$link-dark                 : #005b62;
+$link-light                : #339aa3;
+
+$footer                    : #eef2ff;
+$border                    : rgba(0, 124, 134, 0.25);
+$border-light              : rgba(0, 124, 134, 0.4);
+
+/* Color codes used for the site */
+$danger-color               : #d61f45;
+$info-color                 : #3b6cff;
+$notice-color               : #c300c3;   // magenta accent
+$success-color              : #0aa36c;
+$warning-color              : #d49a00;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.1);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Light theme for the site */
+html[data-theme="light"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+}
+
+/* Footer styling for light mode */
+html[data-theme="light"] {
+  footer {
+    color: #{$text};
+  }
+}
