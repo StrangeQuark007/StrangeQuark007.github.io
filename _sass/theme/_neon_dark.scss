@@ -1,0 +1,69 @@
+/* ==========================================================================
+   NEON THEME - DARK VERSION
+   ========================================================================== */
+
+/* Color codes used for the theme */
+$primary-color              : #00f7ff;   // neon cyan
+$dark-primary-color         : mix(#000, $primary-color, 40%);
+$darker-primary-color       : mix(#000, $primary-color, 60%);
+$light-primary-color        : mix(#fff, $primary-color, 50%);
+$lighter-primary-color      : mix(#fff, $primary-color, 90%);
+
+$background                 : #070a14;   // deep navy/black
+$background-light           : #0b1024;
+$background-lighter         : #121a33;
+
+$text                      : #e8ecff;
+$text-muted                : #aab3d6;
+
+$link                      : #00f7ff;   // cyan links
+$link-dark                 : #baffff;   // hover (lighter)
+$link-light                : #7bd2ff;   // visited (still neon-ish)
+
+$footer                    : #0b1024;
+$border                    : rgba(0, 247, 255, 0.22);
+$border-light              : rgba(0, 247, 255, 0.35);
+
+/* Color codes used for the site */
+$danger-color               : #ff3b6a;
+$info-color                 : #7bd2ff;
+$notice-color               : #ff00ff;   // magenta accent
+$success-color              : #2dff9b;
+$warning-color              : #ffd84d;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background};
+  --global-footer-bg-color            : #{$footer};
+  --global-border-color               : #{$border};
+  --global-dark-border-color          : #{$border-light};
+  --global-code-background-color      : #{$background-light};
+  --global-code-text-color            : #{$text-muted};
+  --global-fig-caption-color          : #{$text-muted};
+  --global-link-color                 : #{$link};
+  --global-link-color-hover           : #{$link-dark};
+  --global-link-color-visited         : #{$link-light};
+  --global-masthead-link-color        : #{$text};
+  --global-masthead-link-color-hover  : #{$primary-color};
+  --global-text-color                 : #{$text};
+  --global-text-color-light           : #{$text-muted};
+  --global-thead-color                : #{$background-lighter};
+}
+
+/* Footer styling for dark mode */
+html[data-theme="dark"] {
+  footer {
+    color: #{$text};
+  }
+}
