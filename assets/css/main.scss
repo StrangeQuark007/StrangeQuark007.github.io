@@ -64,11 +64,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Force Times everywhere */
-html, body,
-*,
-*::before,
-*::after {
-  font-family: "Times New Roman", Times, serif !important;
+/* ===============================
+   Fix icon fonts (Font Awesome / Academicons)
+   =============================== */
+
+/* Font Awesome (solid/brands) */
+.fa, .fas, .far, .fal, .fab,
+i.fa, i.fas, i.far, i.fal, i.fab {
+  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
 }
+
+/* Some themes use these to indicate icon font weight */
+.fas { font-weight: 900 !important; }
+.far { font-weight: 400 !important; }
+.fab { font-weight: 400 !important; }
+
+/* Academicons (Google Scholar / ORCID / INSPIRE etc.) */
+.ai, .ai::before,
+[class^="ai-"], [class*=" ai-"],
+.academicons, .academicons::before {
+  font-family: "Academicons" !important;
+}
+
 
