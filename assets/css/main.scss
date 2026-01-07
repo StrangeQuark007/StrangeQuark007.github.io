@@ -43,47 +43,41 @@
 ;
 
 /* ===============================
-   Global typography override
+   Typography: Times for text only
+   (do NOT affect icon fonts)
    =============================== */
 
 body {
   font-family: "Times New Roman", Times, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* Main content areas */
+.page__content,
+.archive,
+.archive__item,
+.archive__item-title,
+.page__title,
+.page__lead,
+.sidebar,
+.masthead__inner-wrap,
+.page__footer {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Headings */
+.page__content h1, .page__content h2, .page__content h3,
+.page__content h4, .page__content h5, .page__content h6,
+.archive__item-title, .page__title {
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
 }
 
-.masthead,
-.nav__title,
-.page__footer,
-.page__content,
-.archive__item,
-.archive__item-title {
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* ===============================
-   Fix icon fonts (Font Awesome / Academicons)
-   =============================== */
-
-/* Font Awesome (solid/brands) */
+/* IMPORTANT: keep icon fonts intact */
 .fa, .fas, .far, .fal, .fab,
-i.fa, i.fas, i.far, i.fal, i.fab {
-  font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "Font Awesome 6 Brands", "Font Awesome 5 Brands" !important;
+.ai, [class^="ai-"], [class*=" ai-"],
+.icon, .icon::before, .icon::after {
+  font-family: inherit; /* do nothing */
 }
 
-/* Some themes use these to indicate icon font weight */
-.fas { font-weight: 900 !important; }
-.far { font-weight: 400 !important; }
-.fab { font-weight: 400 !important; }
-
-/* Academicons (Google Scholar / ORCID / INSPIRE etc.) */
-.ai, .ai::before,
-[class^="ai-"], [class*=" ai-"],
-.academicons, .academicons::before {
-  font-family: "Academicons" !important;
-}
 
 
