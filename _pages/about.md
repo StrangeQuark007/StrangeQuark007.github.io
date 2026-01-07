@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a physicist jointly affiliated with Columbia University and the Institute for Advanced Study in Princeton. My research focuses on the analytic structure of scattering amplitudes in quantum field theory, with an emphasis on their connection to physical observables relevant to high-energy phenomenology. 
+I am a physicist (postdoc) jointly affiliated with Columbia University and the Institute for Advanced Study in Princeton. My research focuses on the analytic structure of scattering amplitudes in quantum field theory, with an emphasis on their connection to physical observables relevant to high-energy phenomenology. 
 
 I completed my PhD at McGill University under the supervision of [Prof. Simon Caron-Huot](https://www.physics.mcgill.ca/~schuot/), where I focused on developing analytic tools and methods to study and compute scattering observables efficiently.
 
