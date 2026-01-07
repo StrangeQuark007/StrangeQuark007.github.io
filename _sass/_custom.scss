@@ -10,4 +10,9 @@ figcaption {
   font-family: "Baskerville", Times, serif;
 }
 
-.site-footer { display: none !important; }
+/* Hide entire footer (Minimal Mistakes / AcademicPages) */
+.page__footer,
+.site-footer {
+  display: none !important;
+}
+
