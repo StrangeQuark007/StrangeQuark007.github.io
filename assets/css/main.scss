@@ -42,41 +42,18 @@
     "vendor/font-awesome/brands"
 ;
 
-/* ==================================================
-   Times font for Publications + Talks + About
-   (text only; headers & icons untouched)
-   ================================================== */
-
-/* Main textual content */
+/* Publications + Talks + About body text (works even if not wrapped in .page__content) */
 .page__content p,
 .page__content li,
 .page__content span,
-.page__content dd,
-.page__content dt,
-.page__content blockquote {
+.page__content div,
+.wordwrap,
+.wordwrap p,
+.wordwrap span,
+.wordwrap a {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Explicitly DO NOT touch headings */
-.page__content h1,
-.page__content h2,
-.page__content h3,
-.page__content h4,
-.page__content h5,
-.page__content h6 {
-  font-family: inherit;
-}
-
-/* Explicitly DO NOT touch icon fonts */
-.page__content i,
-.page__content i::before,
-.page__content i::after,
-.page__content [class^="ai-"],
-.page__content [class*=" ai-"],
-.page__content [class^="fa"],
-.page__content [class*=" fa"] {
-  font-family: inherit;
-}
 
 
 
