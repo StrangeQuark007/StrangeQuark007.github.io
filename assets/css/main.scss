@@ -42,42 +42,15 @@
     "vendor/font-awesome/brands"
 ;
 
-/* ===============================
-   Typography: Times for text only
-   (do NOT affect icon fonts)
-   =============================== */
-
-body {
+/* Body text only (do not touch headings or icons) */
+.page__content p,
+.page__content li,
+.page__content blockquote,
+.page__content dd,
+.page__content dt {
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Main content areas */
-.page__content,
-.archive,
-.archive__item,
-.archive__item-title,
-.page__title,
-.page__lead,
-.sidebar,
-.masthead__inner-wrap,
-.page__footer {
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* Headings */
-.page__content h1, .page__content h2, .page__content h3,
-.page__content h4, .page__content h5, .page__content h6,
-.archive__item-title, .page__title {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
-}
-
-/* IMPORTANT: keep icon fonts intact */
-.fa, .fas, .far, .fal, .fab,
-.ai, [class^="ai-"], [class*=" ai-"],
-.icon, .icon::before, .icon::after {
-  font-family: inherit; /* do nothing */
-}
 
 
 
